@@ -16,5 +16,12 @@ def clone(text, audio):
 
 iface = gr.Interface(fn=clone, 
                      inputs=["text",gr.Audio(type='filepath')], 
-                     outputs=gr.Audio(type='filepath'))
+                     outputs=gr.Audio(type='filepath'),
+                     title='Voice Clone',
+                     description="""
+                     by [Tony Assi](https://www.tonyassi.com/)
+                     
+                     Please ❤️ this Space. I build custom AI apps for companies. <a href="mailto: tony.assi.media@gmail.com">Email me</a> for business inquiries.
+                     """,
+                     theme = gr.themes.Base(primary_hue="teal",secondary_hue="teal",neutral_hue="slate"))
 iface.launch()
