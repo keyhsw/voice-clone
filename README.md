@@ -1,6 +1,6 @@
 ---
 title: Voice Clone
-emoji: 📉
+emoji: 🗣️
 colorFrom: pink
 colorTo: indigo
 sdk: gradio
