@@ -25,5 +25,6 @@ iface = gr.Interface(fn=clone,
                      """,
                      theme = gr.themes.Base(primary_hue="teal",secondary_hue="teal",neutral_hue="slate"),
                      examples=[["Hey! It's me Dorthy, from the Wizard of Oz. Type in whatever you'd like me to say.","./audio/Wizard-of-Oz-Dorthy.wav"],
-                               ["It's me Vito Corleone, from the Godfather. Type in whatever you'd like me to say.","./audio/Godfather.wav"]])
+                               ["It's me Vito Corleone, from the Godfather. Type in whatever you'd like me to say.","./audio/Godfather.wav"],
+                               ["Hey, it's me Paris Hilton. Type in whatever you'd like me to say.","./audio/Paris-Hilton.mp3"],])
 iface.launch()
