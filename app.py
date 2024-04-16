@@ -23,5 +23,6 @@ iface = gr.Interface(fn=clone,
                      
                      Please ❤️ this Space. I build custom AI apps for companies. <a href="mailto: tony.assi.media@gmail.com">Email me</a> for business inquiries.
                      """,
-                     theme = gr.themes.Base(primary_hue="teal",secondary_hue="teal",neutral_hue="slate"))
+                     theme = gr.themes.Base(primary_hue="teal",secondary_hue="teal",neutral_hue="slate"),
+                     examples=[["Hey! It's me Dorthy, from the Wizard of Oz. Type in whatever you'd like me to say.","./audio/Wizard-of-Oz-Dorthy.wav"]])
 iface.launch()
