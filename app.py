@@ -15,8 +15,8 @@ def clone(text, audio):
     return "./output.wav"
 
 iface = gr.Interface(fn=clone, 
-                     inputs=["text",gr.Audio(type='filepath')], 
-                     outputs=gr.Audio(type='filepath', label='Voice reference audio file'),
+                     inputs=[gr.Textbox(label='Text'),gr.Audio(type='filepath', label='Voice reference audio file')], 
+                     outputs=gr.Audio(type='filepath'),
                      title='Voice Clone',
                      description="""
                      by [Tony Assi](https://www.tonyassi.com/)
